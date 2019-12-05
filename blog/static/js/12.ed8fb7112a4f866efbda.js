@@ -1,0 +1,1 @@
+webpackJsonp([12],{"2YF+":function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticClass:"skill"},[this._v("\n    skill;\n")])},staticRenderFns:[]};var i=n("VU/8")({},s,!1,function(e){n("g51B")},"data-v-72c8334e",null);t.default=i.exports},g51B:function(e,t){}});
