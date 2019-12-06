@@ -51,7 +51,7 @@ export default {
                     router:"vuexPage",
                 },{
                     name:"生活",
-                    router:"/list",
+                    router:"lifePage",
                 },{
                     name:"生活",
                     router:"/list",
@@ -148,7 +148,7 @@ export default {
             width: 55%;
             height: 100vh;
             background:#676564;
-            transform:  translateX(-250px);
+            transform:  translateX(-450px); /*px*/
             .leftImg{
                 width: torem(180);
                 height: torem(180);
@@ -171,54 +171,54 @@ export default {
         }
         .leftNavTf{
             animation: myrotate .4s linear ;
-            transform:  translateX(0px);
+            transform:  translateX(0px); /*px*/
         }
         
         @keyframes myrotate{
             0%{
-                transform:  translateX(-250px);
+                transform:  translateX(-450px);/*px*/
                 opacity: .2;
             }
             25%{
-                transform:  translateX(-160px);
+                transform:  translateX(-300px);/*px*/
                 opacity: .4;
             }
             50%{
-                transform:  translateX(-100px);
+                transform:  translateX(-190px);/*px*/
                 opacity: .6;
             }
             75%{
-                transform:  translateX(-50px);
+                transform:  translateX(-90px);/*px*/
                 opacity: .8;
             }
             100%{
-                transform:  translateX(0px);
+                transform:  translateX(0px);/*px*/
                 opacity: 1;
             }
         }
         .leftNavTfOut{
             animation: myrotateOut .4s linear ;
-            transform:  translateX(-250px);
+            transform:  translateX(-450px);/*px*/
         }
         @keyframes myrotateOut{
             100%{
-                transform:  translateX(-250px);
+                transform:  translateX(-450px);/*px*/
                 opacity: .2;
             }
             75%{
-                transform:  translateX(-160px);
+                transform:  translateX(-300px);/*px*/
                 opacity: .4;
             }
             50%{
-                transform:  translateX(-100px);
+                transform:  translateX(-190px);/*px*/
                 opacity: .6;
             }
             25%{
-                transform:  translateX(-50px);
+                transform:  translateX(-90px);/*px*/
                 opacity: .8;
             }
             0%{
-                transform:  translateX(0px);
+                transform:  translateX(0px);/*px*/
                 opacity: 1;
             }
         }

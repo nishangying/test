@@ -1,6 +1,5 @@
 <template>
-<div class="home " :class="'bg'+randomNum">\
-
+<div class="home " :class="'bg'+randomNum">
     <div class='view'>
         <router-view></router-view>
     </div>

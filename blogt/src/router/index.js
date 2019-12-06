@@ -21,6 +21,7 @@ const scrollpage = () => import('../view/blog/scroll.vue')
 const scrollphoto = () => import('../view/blog/scrollphoto.vue')
 const word = () => import('../view/blog/word.vue')
 const vuexPage = () => import('../view/blog/components/vuexpage.vue')
+const lifePage = () => import('../view/blog/components/lifepage.vue')
 
 
 
@@ -92,6 +93,11 @@ export default new Router({
           path: '/vuexPage',
           name: 'vuexPage',
           component: vuexPage,
+        },
+        {
+          path: '/lifePage',
+          name: 'lifePage',
+          component: lifePage,
         },
       ]
     },

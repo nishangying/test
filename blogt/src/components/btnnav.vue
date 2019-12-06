@@ -107,12 +107,12 @@ export default {
             text-align: center;
             line-height: torem(80);
             background: $Cfff;
-            animation:mymove 5s infinite;
-            -webkit-animation:mymove 5s infinite; /*Safari and Chrome*/
+            animation:mymove 3s infinite;
+            -webkit-animation:mymove 3s infinite; /*Safari and Chrome*/
             animation-direction:alternate;/*轮流反向播放动画。*/
             animation-timing-function: ease-in-out; /*动画的速度曲线*/
             /* Safari 和 Chrome */
-            -webkit-animation:mymove 5s infinite;
+            -webkit-animation:mymove 3s infinite;
             -webkit-animation-direction:alternate;/*轮流反向播放动画。*/
             -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
             &.active{
@@ -125,7 +125,7 @@ export default {
     @keyframes mymove
     {
         0%{
-        transform: scale(1);  /*开始为原始大小*/
+        transform: scale(.8);  /*开始为原始大小*/
         }
         25%{
             transform: scale(1.1); /*放大1.1倍*/
@@ -137,15 +137,15 @@ export default {
             transform: scale(1.1);
         }
         100%{
-            transform: scale(1);
+            transform: scale(.8);
         }
 
     }
-    
-    @-webkit-keyframes mymove /*Safari and Chrome*/
+    // Safari and Chrome
+    @-webkit-keyframes mymove 
     {
         0%{
-        transform: scale(1);  /*开始为原始大小*/
+        transform: scale(.8);  /*开始为原始大小*/
         }
         25%{
             transform: scale(1.1); /*放大1.1倍*/
@@ -157,7 +157,7 @@ export default {
             transform: scale(1.1);
         }
         100%{
-            transform: scale(1);
+            transform: scale(.8);
         }
     }
               
