@@ -1,7 +1,19 @@
 <template>
     <div class='demoPage'>
-        <video id="source_1" controls autoplay loop muted type="video/mp4" src="../../assets/mp4/demo.mp4" >
-         
+        <video
+            autoPlay="autoplay"
+            loop="loop"
+            muted
+            :poster="bannerImg"
+            x5-video-player-type="h5"
+            x5-playsinline="true"
+            playsinline="true"
+            webkit-playsinline="true"
+            x-webkit-airplay="allow"
+            x5-video-player-fullscreen="false"
+            ref='vid'
+            >
+            <source src="../../assets/mp4/demo.mp4" type="video/mp4" />
         </video>
     </div>
 </template>
@@ -12,15 +24,20 @@ import {wordArr} from './worddata'
     export default {
         data(){
             return{
+                bannerImg:require('../../assets/blog/bg/bg01.png'),
                 
             }
         },
         mounted() {
             // window.addEventListener('scroll', this.fu,true);
-          
+            window.addEventListener('touchstart', this.videoStart,true);
         },
         methods:{
-           
+            videoStart() {
+                if (this.$refs.vid.paused) {
+                    this.$refs.vid.play();
+                }
+            }
             
            
         },
@@ -35,7 +52,7 @@ import {wordArr} from './worddata'
         @return ($px / 75)+rem;
     }
     .demoPage{
-        #source_1{
+        video{
             width: 100%;
             source{
                 width: 100%;
