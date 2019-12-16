@@ -53,8 +53,8 @@ export default {
                     name:"生活",
                     router:"lifePage",
                 },{
-                    name:"生活",
-                    router:"/list",
+                    name:"demo",
+                    router:"demo",
                 },
                 
             ],

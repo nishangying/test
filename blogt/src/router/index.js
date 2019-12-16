@@ -23,7 +23,7 @@ const word = () => import('../view/blog/word.vue')
 const vuexPage = () => import('../view/blog/components/vuexpage.vue')
 const lifePage = () => import('../view/blog/components/lifepage.vue')
 
-
+const demo = () => import('../view/blog/demo.vue')
 
 const albumpage = () => import('../view/album/index.vue')
 
@@ -115,6 +115,11 @@ export default new Router({
       path: '/word',
       name: 'word',
       component: word,
+    },
+    {
+      path: '/demo',
+      name: 'demo',
+      component: demo,
     },
     {
         path:'/albumpage',
