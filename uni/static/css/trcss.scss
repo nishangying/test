@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+.page{
+  width: 100%;
+  header{
+    width: 100%;
+    background: #2A78E9;
+    text-align: center;
+    img{
+      width: 1280px;
+    }
+  }
+  .content{
+    width: 1280px;
+    min-height: 600px;
+    margin:  0 auto;
+    text-align: center;
+    padding: 81px 0 ;
+    .tit{
+      font-size: 60px;
+      color: #000000;
+      margin-bottom: 17px;;
+      line-height: 84px;
+    }
+    .note{
+      font-size: 38px;
+      color: #000000;
+      line-height: 53px;
+    }
+    .imgTemp{
+        margin: 34px 0 81px;
+        padding: 0 44px;
+        width: 100%;
+        overflow: hidden;
+        img{
+          float: left;
+          width: 290px;
+          height: 430px;
+          display: inline-block;
+          margin-right: 10px;
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+    }
+    .imgBox{
+        margin: 81px 0 103px;
+        width: 100%;
+        padding: 0 44px;
+        .imgItem{
+          width:33%;
+          display: inline-block;
+          .tempChild{
+            overflow: hidden;
+            width: 100%;
+            margin-bottom: 6px;
+            .imgOne{
+              float: left;
+              width:145px;
+              height: 145px;
+              margin-right:11px;
+            }
+            .imgTwo{
+              float: left;
+              width:233px;
+              height: 145px;
+            }
+          }
+          .tempChild{
+            overflow: hidden;
+            width: 100%;
+            .imgThree{
+              float: left;
+              width:256px;
+              height: 256px;
+              margin-right:11px;
+            }
+            .imgFour{
+              float: left;
+              width:122px;
+              height: 256px;
+            } 
+          }
+        }
+        .imgItem3{
+          width:33%;
+          display: inline-block;
+          .tempChild{
+            overflow: hidden;
+            width: 100%;
+            margin-bottom: 6px;
+            .imgOne{
+              float: left;
+              width:145px;
+              height: 145px;
+            }
+            .imgTwo{
+              float: left;
+              width:233px;
+              height: 145px;
+              margin-right:11px;
+            }
+          }
+          .tempChild{
+            overflow: hidden;
+            width: 100%;
+            .imgThree{
+              float: left;
+              width:256px;
+              height: 256px;
+              
+            }
+            .imgFour{
+              float: left;
+              width:122px;
+              height: 256px;
+              margin-right:11px;
+            } 
+          }
+        }
+    }
+    .download{
+      width: 100%;
+      margin-top: 44px;
+      overflow: hidden;
+      padding: 0 150px;
+      .item{
+        float: left;
+        width: 244px;
+        height: 244px;
+        border: 1px solid #DBDBDB;;
+        display: inline-block;
+        margin: 0 38.5px;
+        font-size: 22px;
+        color: #000;
+        padding: 36px;
+        .icon1{
+          width: 48px;
+          height: 53px;
+          margin:60px 0 45px;
+        }
+        .icon2{
+          width: 52px;
+          height: 52px;
+          margin:60px 0 45px;
+        }
+        .icon3{
+          width: 172px;
+          height: 172px;
+        }
+      }
+      .item:hover{
+        background: #2A78E9;
+        color: #fff;
+      }
+      .item3{
+        float: left;
+        width: 244px;
+        height: 244px;
+        border: 1px solid #DBDBDB;;
+        display: inline-block;
+        margin: 0 38.5px;
+        font-size: 22px;
+        color: #000;
+        padding: 36px;
+        .icon3{
+          width: 172px;
+          height: 172px;
+        }
+      }
+      
+      
+
+    }
+    footer{
+      width: 45%;
+      margin: 86px auto 0;
+      font-size: 21px;
+      color: #000;
+      text-align: center;
+      position: relative;
+      p{
+        color: #000;
+        white-space: nowrap;
+      }
+      a{
+        color: #000;
+        &:first-child{
+          margin-right: 20px;
+        }
+      }
+      a:hover{
+        color: #2A78E9;
+      }
+      .baicon{
+        position:absolute;
+        left: -28px;
+        bottom: 0px;
+        width: 29px;
+        height: 29px;
+      }
+    }
+  }
+}
