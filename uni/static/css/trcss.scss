@@ -38,9 +38,14 @@
           height: 430px;
           display: inline-block;
           margin-right: 10px;
+          cursor: pointer;  
+          transition: all 0.5s; /* 所有的属性变化在0.5s的时间段内完成 */
           &:last-child{
             margin-right: 0;
           }
+        }
+        img:hover{
+          transform: scale(1.1); /* 鼠标放到图片上的时候图片按比例放大1.5倍   */
         }
     }
     .imgBox{
@@ -81,6 +86,13 @@
               height: 256px;
             } 
           }
+          img{
+            cursor: pointer;  
+            transition: all 0.5s; /* 所有的属性变化在0.5s的时间段内完成 */
+          }
+          img:hover{
+            transform: scale(1.1); /* 鼠标放到图片上的时候图片按比例放大1.5倍   */
+          }
         }
         .imgItem3{
           width:33%;
@@ -116,6 +128,13 @@
               height: 256px;
               margin-right:11px;
             } 
+          }
+          img{
+            cursor: pointer;  
+            transition: all 0.5s; /* 所有的属性变化在0.5s的时间段内完成 */
+          }
+          img:hover{
+            transform: scale(1.1); /* 鼠标放到图片上的时候图片按比例放大1.5倍   */
           }
         }
     }
